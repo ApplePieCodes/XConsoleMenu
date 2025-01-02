@@ -1,7 +1,18 @@
-﻿namespace XConsoleMenu
+﻿using System;
+
+namespace XConsoleMenu
 {
     public class XConsoleMenu
     {
+        /// <summary>
+        /// Displays A Menu
+        /// </summary>
+        /// <param name="title">The title of the menu, displayed before the options.</param>
+        /// <param name="menuItems">A list of menu options. Should not exceed 15 items.</param>
+        /// <param name="foreground">The foreground color of the menu. acts as the backround for the currently selected item.</param>
+        /// <param name="background">The background color of the menu. acts as the foreground for the currently selected item.</param>
+        /// <param name="showNumbers">Shows item numbers to the user.</param>
+        /// <returns></returns>
         public static int DisplayMenu(string title, string[] menuItems, ConsoleColor foreground = ConsoleColor.Green, ConsoleColor background = ConsoleColor.Black, bool showNumbers = true)
         {
             Console.ForegroundColor = foreground;

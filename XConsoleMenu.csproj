@@ -2,8 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>XConsoleMenu</Title>
+    <SignAssembly>False</SignAssembly>
+    <Version>0.1.0</Version>
+    <Authors>Alula</Authors>
+    <Description>A simple console menu using the arrow keys, number keys, and enter key.</Description>
+    <PackageProjectUrl>https://github.com/ApplePieCodes/XConsoleMenu</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ApplePieCodes/XConsoleMenu</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>console;menu;gui;ui;ux;visual;cmd;</PackageTags>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <IsAotCompatible>True</IsAotCompatible>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <IsAotCompatible>True</IsAotCompatible>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
 
 </Project>
